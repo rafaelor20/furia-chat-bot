@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Comandos from './Comandos';
 
 const botUrl = import.meta.env.VITE_BOT_URL;
-console.log('Bot URL:', botUrl);
+
 export default function App() {
   return (
     <Router>
