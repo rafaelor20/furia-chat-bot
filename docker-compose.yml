@@ -1,0 +1,17 @@
+services:
+
+  furia-bot:
+    container_name: furia-bot
+    build: ./furia-bot
+    restart: always
+    env_file:
+      - furia-bot/.env
+  
+  furia-fanzone:
+    container_name: furia-fanzone
+    build: ./furia-fanzone
+    ports:
+      - "4174:4173"
+    restart: always
+    env_file:
+      - furia-fanzone/.env

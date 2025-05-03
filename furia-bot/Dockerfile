@@ -7,9 +7,6 @@ WORKDIR /usr/src
 # copy the current directory to the workdir
 COPY . .
 
-# "expose" port 5000
-#EXPOSE 5000
-
 # download dependencies
 RUN npm i
 
