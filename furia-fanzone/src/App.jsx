@@ -2,6 +2,8 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Comandos from './Comandos';
 
+const botUrl = import.meta.env.VITE_BOT_URL;
+console.log('Bot URL:', botUrl);
 export default function App() {
   return (
     <Router>
@@ -33,7 +35,7 @@ function Home() {
         </section>
 
         <section className="text-center space-y-4">
-          <a href="https://t.me/FuriaFanZone_project_Bot" target="_blank" rel="noopener noreferrer">
+          <a href={botUrl} target="_blank" rel="noopener noreferrer">
             <button className="bg-furia-accent hover:bg-orange-600 transition px-6 py-3 rounded-xl text-xl font-bold">
               Entrar no Chat
             </button>
