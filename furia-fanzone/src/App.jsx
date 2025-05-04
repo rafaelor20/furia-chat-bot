@@ -48,7 +48,7 @@ function Home() {
       </main>
 
       <footer className="p-6 text-center text-sm border-t border-furia-purple mt-16">
-        <p>Feito por Rafael Rosário para teste técnico • <a href="https://github.com/seuuser/furia-fanzone" className="underline">GitHub</a></p>
+        <p>Feito por Rafael Rosário para teste técnico • <a href="https://github.com/rafaelor20/furia-chat-bot" className="underline">GitHub</a></p>
       </footer>
     </div>
   );
